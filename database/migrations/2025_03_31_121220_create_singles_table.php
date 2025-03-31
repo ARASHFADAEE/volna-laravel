@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('singles', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('slug')->unique();
             $table->foreignId('artist_id')->constrained('artists')->onDelete('cascade');
             $table->foreignId('genre_id')->constrained('genres')->onDelete('cascade');
             $table->foreignId('mood_id')->constrained('moods')->onDelete('cascade');

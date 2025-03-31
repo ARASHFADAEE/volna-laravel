@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('albums', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('slug')->unique();
             $table->foreignId('artist_id')->constrained('artists')->onDelete('cascade');
             $table->string('cover_image')->nullable();
             $table->date('release_date')->nullable();
