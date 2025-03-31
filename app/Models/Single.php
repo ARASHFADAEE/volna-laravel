@@ -8,8 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Single extends Model
 {
-    protected $fillable = ['title', 'artist_id', 'genre_id', 'mood_id', 'audio_file', 'duration'];
-
+    protected $fillable = ['title', 'artist_id', 'genre_id', 'mood_id', 'cover_image', 'audio_file', 'description', 'duration', 'slug'];
     // رابطه: یک موزیک تکی متعلق به یک هنرمند است
     public function artist(): BelongsTo
     {

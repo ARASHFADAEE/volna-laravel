@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@yield('title', 'ولنا موزیک')ولناموزیک -</title>
+    <title>@yield('title', 'ولنا موزیک')</title>
     {{-- add meta description seo --}}
     <meta name="description" content="@yield('meta_description', 'ولنا موزیک، پلتفرم آنلاین موسیقی با مجموعه‌ای از آهنگ‌های کلاسیک و جدید ایرانی')">
     <meta name="keywords" content="@yield('meta_keywords', 'موسیقی ایرانی, آهنگ جدید, آلبوم موسیقی, ولنا موزیک')">
@@ -416,6 +416,7 @@
     </footer>
 
     <!-- script's -->
+    <script src="/frontend/js/script.js"></script>
     <script src="/frontend/js/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>

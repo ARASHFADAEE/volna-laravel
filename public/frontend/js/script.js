@@ -53,10 +53,10 @@ function pauseSong() {
 playButton.addEventListener('click', () => {
   if (audio.paused) {
     playSong();
-    playButton.innerHTML = '<img src="/assets/icons/pause.svg" alt="Pause">'; // تغییر دکمه به توقف
+    playButton.innerHTML = '<img src="/frontend/assets/icons/pause.svg" alt="Pause">'; // تغییر دکمه به توقف
   } else {
     pauseSong();
-    playButton.innerHTML = '<img src="/assets/icons/play.svg" alt="Play">'; // تغییر دکمه به پخش
+    playButton.innerHTML = '<img src="frontend/assets/icons/play.svg" alt="Play">'; // تغییر دکمه به پخش
   }
 });
 
@@ -112,9 +112,9 @@ function formatTime(seconds) {
 
 window.addEventListener('load', () => {
   if (audio.paused) {
-    playButton.innerHTML = '<img src="/assets/icons/play.svg" alt="Play">'; // اگر متوقف است، دکمه را به Play تغییر دهید
+    playButton.innerHTML = '<img src="/frontend/assets/icons/play.svg" alt="Play">'; // اگر متوقف است، دکمه را به Play تغییر دهید
   } else {
-    playButton.innerHTML = '<img src="/assets/icons/pause.svg" alt="Pause">'; // اگر در حال پخش است، دکمه را به Pause تغییر دهید
+    playButton.innerHTML = '<img src="/frontend/assets/icons/pause.svg" alt="Pause">'; // اگر در حال پخش است، دکمه را به Pause تغییر دهید
   }
 });
 
